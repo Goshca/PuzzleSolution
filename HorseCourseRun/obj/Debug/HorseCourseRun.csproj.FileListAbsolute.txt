@@ -1,0 +1,6 @@
+D:\MyProject\PuzzleSolution\HorseCourseRun\bin\Debug\HorseCourseRun.exe.config
+D:\MyProject\PuzzleSolution\HorseCourseRun\bin\Debug\HorseCourseRun.exe
+D:\MyProject\PuzzleSolution\HorseCourseRun\bin\Debug\HorseCourseRun.pdb
+D:\MyProject\PuzzleSolution\HorseCourseRun\obj\Debug\HorseCourseRun.csprojResolveAssemblyReference.cache
+D:\MyProject\PuzzleSolution\HorseCourseRun\obj\Debug\HorseCourseRun.exe
+D:\MyProject\PuzzleSolution\HorseCourseRun\obj\Debug\HorseCourseRun.pdb
