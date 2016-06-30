@@ -26,7 +26,7 @@ namespace HorseCourseRun
             int i = 0, j = 0, Xi = 0, Yj = 0;
             for (int Cell = 1; Cell <= FieldSize; Cell++)
             {
-                
+
                 Field[i, j] = Cell;
                 /////////////////////
                 for (int a = 0; a < FieldVer; a++)
@@ -34,7 +34,7 @@ namespace HorseCourseRun
                     for (int b = 0; b < FieldHor; b++)
                     {
                         //Field[a, b] = Cell;
-                        Console.Write(Field[a, b] + " ");
+                        Console.Write(String.Format("{0:00}", Field[a, b]) + " ");
                     }
                     Console.WriteLine();
 
@@ -43,7 +43,7 @@ namespace HorseCourseRun
                 ////////////////////////
                 for (int MoveList = 1; MoveList <= 9; MoveList++)
                 {
-                    
+
                     switch (MoveList)
                     {
                         case 1:
@@ -102,25 +102,23 @@ namespace HorseCourseRun
                             {
                                 Console.WriteLine("-=lockup=-");
                             }
-                           /* for (int a = 0; a < FieldVer; a++)
-                            {
-                                for (int b = 0; b < FieldHor; b++)
-                                {
-                                    Field[a, b] = Cell;
-                                    Console.Write(Field[a, b] + " ");
-                                }
-                                Console.WriteLine();
+                            /* for (int a = 0; a < FieldVer; a++)
+                             {
+                                 for (int b = 0; b < FieldHor; b++)
+                                 {
+                                     Field[a, b] = Cell;
+                                     Console.Write(Field[a, b] + " ");
+                                 }
+                                 Console.WriteLine();
 
-                            }
-                            Console.ReadLine();*/
+                             }
+                             Console.ReadLine();*/
                             break;
                     }
                     if (Xi >= 0 && Xi < FieldHor && Yj >= 0 && Yj < FieldVer && Field[Xi, Yj] == 0)
                     {
                         i = Xi;
                         j = Yj;
-
-
                         Field[i, j] = Cell;
                         break;
 
