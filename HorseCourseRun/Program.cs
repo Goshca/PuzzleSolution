@@ -20,7 +20,7 @@ namespace HorseCourseRun
             Console.Write("Value vertical: ");
             FieldVer = int.Parse(Console.ReadLine());
             Console.WriteLine("Playing the Field: " + FieldHor + "x" + FieldVer);
-            int[,] Field = new int[FieldVer, FieldHor];
+            int[,] Field = new int[FieldHor, FieldVer];
             FieldSize = FieldHor * FieldVer;
             Console.WriteLine("Field Size: " + FieldSize);
             int i = 0, j = 0, Xi = 0, Yj = 0;
@@ -29,9 +29,9 @@ namespace HorseCourseRun
 
                 Field[i, j] = Cell;
                 /////////////////////
-                for (int a = 0; a < FieldVer; a++)
+                for (int a = 0; a < FieldHor; a++)
                 {
-                    for (int b = 0; b < FieldHor; b++)
+                    for (int b = 0; b < FieldVer; b++)
                     {
                         //Field[a, b] = Cell;
                         Console.Write(String.Format("{0:00}", Field[a, b]) + " ");
